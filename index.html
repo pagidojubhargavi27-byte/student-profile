@@ -5,45 +5,198 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSE Student Profile</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      <div style="text-align: center; padding: 15px;">
-  <img src="vbit.jpg"
-       alt="VBIT College Logo"
-       style="width: 120px; height: auto;">
-</div>
       font-family: Arial, sans-serif;
-      background: #eef2ff;
-      text-align: center;
+      background: #f1f3f6;
+      margin: 0;
       padding: 30px 15px;
+      color: #222;
     }
-    .card {
-      max-width: 400px;
+
+    .form-container {
+      max-width: 750px;
       margin: auto;
-      padding: 25px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 4px 15px #0002;
+      background: #fff;
+      border: 1px solid #cbd2dc;
+      padding: 30px 40px;
+      box-shadow: 0 2px 8px #00000012;
     }
-    h1 { color: #4338ca; }
-    p { color: #333; line-height: 1.6; }
+
+    .college-header {
+      text-align: center;
+      padding-bottom: 18px;
+      border-bottom: 2px solid #17365d;
+      margin-bottom: 25px;
+    }
+
+    .college-logo {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .college-name {
+      color: #17365d;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 8px 0;
+      text-transform: uppercase;
+    }
+
+    .document-title {
+      text-align: center;
+      color: #17365d;
+      font-size: 21px;
+      margin: 25px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      background: #17365d;
+      color: white;
+      padding: 11px 14px;
+      font-size: 15px;
+      margin: 20px 0 0;
+    }
+
+    .details {
+      border: 1px solid #d4dbe5;
+      border-top: none;
+      padding: 10px 18px;
+    }
+
+    .detail-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 12px;
+      padding: 13px 0;
+      border-bottom: 1px solid #e5e7eb;
+      line-height: 1.5;
+    }
+
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .value {
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 25px;
+      padding-top: 15px;
+      border-top: 1px solid #cbd2dc;
+      color: #666;
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 20px 15px;
+      }
+
+      .detail-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .college-name {
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div style="text-align: center; padding: 15px;">
-  <img src="vbit.jpg"
-       alt="VBIT College Logo"
-       style="width: 120px; height: auto;">
-</div>
-  <div class="card">
-    <h1>My CSE Student Profile</h1>
-    <p><b>Name:</b> Pagidoju.Bhargavi</p>
-    <p><b>Student ID:</b> 25P61A05P9 </p>
-    <p><b>Course:</b> B.Tech - CSE</p>
-    <p><b>Year:</b> 2nd Year</p>
-    <p><b>College:</b> VBIT</p>
-    <p><b>Department:</b> Computer Science & Engineering</p>
-    <p><b>Skills:</b> C, Java, Python, Node.js</p>
-  </div>
+  <main class="form-container">
+
+    <header class="college-header">
+      <img
+        src="vbit.jpg"
+        alt="VBIT College Logo"
+        class="college-logo"
+      >
+      <div class="college-name">
+        Vignana Bharathi Institute of Technology
+      </div>
+    </header>
+
+    <h1 class="document-title">
+      Student Profile Form
+    </h1>
+
+    <h2 class="section-title">1. Student Information</h2>
+    <section class="details">
+
+      <div class="detail-row">
+        <div class="label">Student Name</div>
+        <div class="value">Pagidoju.Bhargavi</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Student ID</div>
+        <div class="value">25P61A05P9</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Course</div>
+        <div class="value">B.Tech - CSE</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Academic Year</div>
+        <div class="value">2nd Year</div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">2. Academic Details</h2>
+    <section class="details">
+
+      <div class="detail-row">
+        <div class="label">College</div>
+        <div class="value">
+          Vignana Bharathi Institute of Technology (VBIT)
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="label">Department</div>
+        <div class="value">
+          Computer Science &amp; Engineering
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">3. Technical Skills</h2>
+    <section class="details">
+
+      <div class="detail-row">
+        <div class="label">Programming Skills</div>
+        <div class="value">C, Java, Python, Node.js</div>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      CSE Student Profile | VBIT
+    </footer>
+
+  </main>
 </body>
 </html>
