@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Student Profile | VBIT</title>
+  <title>Student Profile - VBIT</title>
 
   <style>
     * {
@@ -14,50 +13,50 @@
 
     body {
       margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      padding: 16px;
+      background: #f4f4f4;
       color: #222;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* VBIT logo at the top */
+    /* Original VBIT logo at the top */
     .college-logo {
       display: block;
       width: 100%;
-      max-width: 100%;
       height: auto;
-      margin: 0 auto 15px;
+      margin: 0 auto 16px;
     }
 
-    /* Student application form */
+    /* Profile form */
     .profile-container {
+      width: 100%;
       max-width: 750px;
       margin: 0 auto;
-      padding: 30px;
-      background-color: white;
+      padding: 28px;
+      background: #fff;
       border: 1px solid #ccc;
     }
 
     h1 {
+      margin: 0 0 8px;
       text-align: center;
       color: #174d36;
       font-size: 26px;
-      margin-bottom: 8px;
     }
 
     .subtitle {
+      margin: 0 0 24px;
       text-align: center;
       color: #555;
       font-size: 14px;
-      margin-bottom: 25px;
     }
 
     h2 {
+      margin-top: 24px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ccc;
       color: #174d36;
       font-size: 18px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 8px;
-      margin-top: 25px;
     }
 
     .field {
@@ -66,16 +65,16 @@
 
     .field label {
       display: block;
-      font-weight: bold;
       margin-bottom: 7px;
+      font-weight: bold;
     }
 
     .field p {
+      min-height: 40px;
       margin: 0;
       padding: 11px;
-      background-color: #fafafa;
+      background: #fafafa;
       border: 1px solid #ddd;
-      min-height: 40px;
       overflow-wrap: anywhere;
     }
 
@@ -87,19 +86,19 @@
 
     .skills span {
       padding: 8px 14px;
-      background-color: #e7f3ec;
+      background: #e7f3ec;
       color: #176b45;
       border: 1px solid #c8dfd0;
       border-radius: 4px;
     }
 
     .footer {
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 1px solid #ddd;
       text-align: center;
       color: #666;
       font-size: 12px;
-      margin-top: 30px;
-      padding-top: 15px;
-      border-top: 1px solid #ddd;
     }
 
     @media (max-width: 600px) {
@@ -120,20 +119,11 @@
 
 <body>
 
-  <!-- College logo: automatically visible at the top -->
-  <img
-    src="vbit.jpg"
-    alt="Vignana Bharathi Institute of Technology Logo"
-    class="college-logo"
-  >
-
   <main class="profile-container">
 
     <h1>STUDENT PROFILE</h1>
+<img src="vbit.png" alt="VBIT" style="width: 100%; height: auto;">
 
-    <p class="subtitle">
-      Vignana Bharathi Institute of Technology
-    </p>
 
     <h2>Student Details</h2>
 
@@ -159,7 +149,7 @@
 
     <div class="field">
       <label>College</label>
-      <p>Vignana Bharathi Institute of Technology (VBIT)</p>
+      <p>VBIT</p>
     </div>
 
     <div class="field">
